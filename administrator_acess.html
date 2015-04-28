@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+input{
+padding:5px;
+border:solid 1px #DEDEDE;
+background:hsla(160,30%,75%,0.1);
+width:200px;
+}
+input:hover,input:focus{
+border-color:#F00;
+background:hsla(349,50%,50%,0.8);
+}
+.submit input{
+padding:5px;
+background:hsla(120,100%,100%,0.3);
+font-size:14px;
+color:#000;
+}
+
+html, body {
+margin:0; padding:0;
+height:100%;
+}
+
+body {
+background:url('page_bg.jpg') 50% 50% no-repeat #FC3;
+font-family:Georgia, Times, serifs;
+}
+
+#floater {
+position:relative; float:left;
+height:55%; margin-bottom:-200px;
+width:1px;
+}
+
+#centered {
+position:relative; clear:left;
+height:300px; width:80%; max-width:800px; min-width:400px;
+margin:0 auto;
+background:#fff;
+border:4px solid #666;
+}
+
+#content {
+position:absolute; left:20%; right:; top:0; bottom:0;
+overflow:auto; height:300px;
+padding:20px; margin:10px;
+}
+     </style>
+
+<title> Administrator_access</title>
+</head>
+<body>
+<div id="floater"></div>
+<div id="centered">
+<div id="content">
+<h1 style=color:#FFA500>Administrator Log In</h1>
+<form action="identify_admin.php" method="post">
+<p class="ID">
+<label for="ID">ID: </label>
+<input type="text" name="id">
+</p>
+<p class="password">
+<label for="password">Password: </label>
+<input type="password" name="password">
+</p>
+<p class="submit">
+<input type="submit"name='submit' value='submit'>
+</p>
+</form>
+</div>
+</div>
+</body>
+</html>
